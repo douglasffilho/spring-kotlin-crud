@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-kotlin-crud
+  cloud:
+    config:
+      uri: http://config-server.io
+
+management:
+  endpoints:
+    web:
+      base-path: /devops
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+health:
+  config:
+    enabled: true
+
